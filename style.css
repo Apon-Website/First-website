@@ -1,0 +1,662 @@
+*{
+    margin: 0;
+    padding: 0;;
+}
+#navigation{
+    background-image: linear-gradient(dodgerblue, rgb(2, 46, 90));
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#navigation > ul{
+    display: flex;
+    margin-right: 50px;
+}
+#navigation > ul >li{
+    list-style: none;
+    margin: 0px 5px;
+    margin-left:-5px;
+    padding: 15px 0px;
+}
+#navigation > ul > li > a{
+    text-decoration: none;
+    color:white;
+    font-size: 18px;
+    border-right: 1px solid white;
+    padding: 16px 20px;
+    transition: 0.5s;
+}
+#navigation > ul > li:first-child > a{
+    border-left: 1px solid white;
+    padding-left: 20px;
+} 
+
+#navigation > ul > li:hover >a{
+    background-color: rgb(4, 90, 176);
+}
+
+.logo > h2{
+    margin-left: 50px;
+    color:white;
+
+}
+.logoFristLetter{
+    color: yellow;
+}
+.dropdown{
+    opacity: 0;
+    visibility: hidden;
+    background-color: dodgerblue;
+    text-align: center;
+    margin-top: 15px;
+    width: 190px;
+    position:absolute;
+    transition: 0.5s;
+    box-shadow: 10px 10px 8px black;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+.dropdown > li{
+    list-style: none;
+    padding: 10px 0px;
+    border-bottom: 1px solid white;
+}
+.dropdown > li:hover{
+    background-color: rgb(6, 89, 172);
+}
+.dropdown > li:first-child{
+    border-top: 1px solid white;
+}
+.dropdown > li > a{
+    text-decoration: none;
+    color:white;
+}
+#navigation > ul > li:hover .dropdown{
+    opacity: 1;
+    visibility:visible;
+    transform: scaleY(1);
+}
+ /* HERO area code start hare */
+
+ #main-header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.034),rgb(0, 0, 0)), url('image/apon.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    height: 90vh;
+ }
+ .header-container{
+    padding-top: 100px;
+ }
+ .header-container > h1{
+    width: 500px;
+    margin: 20px auto;
+    background-color: rgba(158, 63, 246, 0.621);
+    font-size: 50px;
+    color:white;
+    padding: 15px 25px;
+    border-radius: 10px;
+  
+ }
+ .header-container > button{
+    font-size: 20px;
+    padding: 15px 25px;
+    margin: 20px;
+    background-color: rgb(2, 21, 62);
+    color:white;
+    border-radius: 30px 10px 30px 10px;
+    border: 3px solid rgba(4, 240, 244, 0.582);
+    cursor: pointer;
+    transition: 1s;
+ }
+ .header-container > button:hover{
+    background-color: rgba(0, 0, 0, 0.112);
+ }
+ .header-container > h4{
+    color: rgb(6, 244, 240);
+    font-size: 25px;
+ }
+ .header-container > h5{
+    color:rgb(39, 7, 244);
+    font-size: 25px;
+    margin-bottom: 50px;
+ }
+ .social-icon > a{
+    color: white;
+    text-decoration: none;
+    
+ }
+ .social-icon > a > i{
+    width: 50px;
+    height: 50px;
+    line-height: 1.6;
+    margin: 10px 5px;
+    font-size: 30px;
+    background-color: rgba(212, 0, 0, 0);
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: 0.5s;
+ }
+ .social-icon > a >i:hover{
+    background-color: dodgerblue;
+    border: 2px solid rgb(0, 255, 136);
+    transform: rotate(360deg);
+ }
+
+/* Frist section code start here  */
+
+#frist-container{
+    width: 1000px;
+    margin: auto;
+    display:flex;
+    justify-content:space-between;
+    padding: 50px 0px;
+}
+.Learn-pograming{
+    
+    width: 300px;
+    text-align: center;
+    padding: 30px 10px;
+}
+.Learn-pograming{
+    margin: 15px 0px;
+}
+.Learn-pograming:hover{
+    box-shadow: 3px 3px 8px gray;
+    transition: 0.5s;
+}
+
+.Web-Developer{
+    
+    width: 300px;
+    text-align: center;
+    padding: 30px 10px;
+}
+.Web-Developer{
+    margin: 15px 0px;
+}
+.Web-Developer:hover{
+    box-shadow: 3px 3px 8px gray;
+    transition: 0.5s;
+}
+.Learn-Frilancing{
+    
+    width: 300px;
+    text-align: center;
+    padding: 30px 10px;
+}
+.Learn-Frilancing{
+    margin: 15px 0px;
+}
+.Learn-Frilancing:hover{
+     box-shadow: 3px 3px 8px gray;
+     transition: 0.5s;
+}
+/* second section code start here  */
+
+.smartArea-title{
+    text-align: center;
+    font-size: 40px;
+    position: relative;
+
+}
+.smartArea-title > h2::after{
+    content: '';
+    top: 60px;
+    left: 532px;
+    width: 205px;
+    height: 5px;
+    background-color: rgb(243, 34, 34);
+    position: absolute;
+
+}
+
+.smart-area{
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0px;
+}
+
+.smart-area-text{
+    width: 500px;
+}
+
+.smart-area-text > h2{
+      margin: 20px 0;
+}
+
+.smart-area-text > h4{
+    color:rgb(243, 34, 34);
+}
+
+.smart-area-text > a{
+    text-decoration: none;
+    background-color:rgb(188, 4, 4) ;
+    color: white;
+    font-size: 20px;
+    padding: 10px 30px;
+    margin: 20px;
+    display: inline-block;
+    border-radius: 10px 30px 10px 30px;
+    transition: 0.5s;
+}
+
+.smart-area-text > a:hover{
+    background-color: rgb(114, 3, 3);
+}
+
+/* third section code start hare  */
+
+#third-section{
+    background-color: #f7f5f5;
+        
+}
+
+.services-area-title{
+    text-align: center;
+}
+
+.services-area-title > h2{
+    font-size: 40px;
+    padding: 40px 0 60PX 0;
+    color: rgb(157, 0, 255);
+}
+
+.services-area-title > h4{
+    color: rgb(221, 25, 3);
+}
+
+.each-services-parent{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding-bottom: 60px;
+}
+
+.services-area{
+    width: 1000px;
+    margin: auto;
+}
+
+.each-service{
+    background-color: rgb(112, 199, 228);
+    text-align: center;
+    padding: 30px 0;
+    transition: 0.5s;
+
+}
+
+.each-service:hover{
+    background-color: rgb(71, 207, 252);
+    
+}
+.each-service > h3{
+    margin: 15px 0;
+}
+
+/* fourth section code start hare  */
+
+#fourth-section{
+    background-color: #efecec;
+}
+.pricing-area-container{
+    width: 1000px;
+    margin: auto;
+    padding-bottom: 100px;
+}
+.pricing-area-parent{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.pricing-title{
+    text-align: center;
+    font-size: 35px;
+    padding: 50px 0;
+}
+
+.single-card-img{
+    width: 310px;
+    
+    
+}
+.single-card-img >img{
+    max-width: 100%;
+}
+.single-card{
+    width: 310px;
+    text-align: center;
+    box-shadow: 5px 5px 10px gray;
+    
+}
+.single-card > h3{
+    margin: 20px 0;
+    font-size: 25px;
+
+}
+.month-pricing{
+    border-top: 1px dashed gray;
+    border-bottom: 1px dashed gray;
+    padding: 15px 0;
+    margin: 15px 20px;
+}
+.month-pricing > .month-pricing-span1{
+    font-size: 25px;
+
+}
+.month-pricing > .month-pricing-span2{
+        color: gray;
+}
+.single-card > button{
+    background-color: rgb(114, 3, 3) ;
+    color:white;
+    padding: 10px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.single-card > button:hover{
+    background-color:rgba(114, 3, 3, 0) ;
+    color:black;
+}
+.single-card > a{
+    text-decoration: none;
+    margin: 15px 0;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* five section start hare  */
+
+#five-section{
+    background-color: rgb(248, 226, 200);
+}
+
+.testo-container{
+    width: 1000px;
+    margin: auto;
+    padding-bottom: 100px;
+}
+
+.testimonial-title{
+    text-align: center;
+    padding: 50px 0;
+
+}
+.testimonial-title h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.testimonial-title h4{
+    color: gray;
+    letter-spacing: 0.4em;
+}
+.testo-singlecard-parent{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
+}
+.testo-singlecard{
+    display: flex;
+    align-items: center;
+    background-color: rgb(247, 249, 249);
+    padding: 20px;
+}
+.testo-img-div{
+    width: 200px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.testo-img-div img{
+    max-width: 100%;
+    border-radius: 50%;
+    border: 1px solid red;
+}
+.testo-span{
+    font-size: 22px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+
+/* parallax section start hare  */
+
+#parallax-section{
+    background-image: url("image/apon.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 80px 0;
+}
+
+.parallax-item-parent{
+      display: flex;
+      justify-content: space-between;
+      width: 1000px;
+      margin: auto;
+      text-align: center;
+      color: white;
+
+}
+.parallax-single-item > i{
+      font-size: 40px;
+}
+.parallax-single-item > h2{
+       font-size: 40px;
+       margin: 20px 0;
+}
+
+/* blog section code start hare  */
+
+.blog-container{
+    width: 1000px;
+    margin: auto;
+    padding-bottom: 100px;
+}
+
+.blog-item-parent{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+}
+.blog-image{
+    max-width: 100%;
+    height: 300px;
+    transition: 0.5s;
+}
+
+.blog-icons{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    opacity: 0;
+    transition: 0.5s;
+}
+.blog-image-icon-div{
+    position: relative;
+    overflow: hidden;
+}
+.blog-image-icon-div:hover .blog-icons{
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.432);
+}
+.blog-image-icon-div:hover .blog-image{
+    transform: scale(1.6);
+}
+.blog-icons i{
+    font-size: 40px;
+    margin-bottom: 20px;
+
+}
+.single-item-text{
+    text-align: center;
+    margin: 10px 0;
+}
+.single-item-text p{
+    margin-top: 10px;
+    color: rgba(134, 132, 132, 0.726);
+}
+
+/* contact section code start hare  */
+
+.contact-container{
+    width: 1000px;
+    margin: auto;
+    padding-bottom: 100px;
+}
+
+.form-parent{
+    background-color: #eafcf0;
+    display: flex;
+}
+
+.fullname-email-parent{
+    display: flex;
+}
+.fullname-email-parent input{
+    width: 200px;
+    height: 40px;
+    margin: 0 20px;
+    border: none;
+    padding: 0 10px;
+    
+    
+}
+
+.fullname-email-parent h4{
+    margin: 40px 20px 10px 20px;
+    
+}
+
+.form-tag{
+    width: 600px;
+}
+.subject-input-text{
+    margin: 20px 20px 10px 20px;
+}
+.subject-input{
+    width: 85%;
+    height: 40px;
+    margin: 0 20px;
+    border: none;
+    padding: 0 10px;
+}
+.form-textarea{
+    width: 85%;
+    height: 100px;
+    border: none;
+    margin: 0 20px;
+    padding: 5px 10px;
+}
+.form-button{
+    background-color: #4771f1;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 20px 0 20px 0;
+    
+}
+.form-address-parent{
+    display: flex;
+    padding: top 50px;
+    justify-content: space-between;
+}
+.form-single-address{
+    text-align: center;
+}
+.form-single-address i{
+    background-color: #4771f1;
+    color: white;
+    padding: 20px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+.form-single-address span{
+    font-weight: bold;
+}
+
+/* footer section code start hare  */
+
+footer{
+    background-color: #036e7d;
+    color: gray;
+}
+.footer-container{
+    width: 1000px;
+    margin: auto;
+}
+.footer-single-item-parent{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-single-item{
+    width: 220px;
+    overflow: hidden;
+}
+.footer-single-item h3{
+    color: white;
+    margin: 50px 0 20px 0;
+}
+.footer-fristdiv-p1{
+    margin-bottom: 20px;
+}
+.footer-fristdib-p2{
+    margin: 10px 0;
+}
+.footer-single-item i{
+    color: white;
+}
+.footer-single-item-parent .footer-single-item:nth-child(2) p{
+    margin: 10px 0;
+}
+.footer-single-item-parent .footer-single-item:nth-child(3) p{
+    margin: 10px 0;
+}
+.footer-single-item-parent .footer-single-item:nth-child(4) p{
+    margin: 10px 0;
+}
+.footer-single-item-parent .footer-single-item:nth-child(4) a{
+     text-decoration: none;
+     color: brown;
+}
+.footer-menual-item ul{
+      display: flex;
+      justify-content: center;
+}
+.footer-menual-item ul li{
+       list-style: none;
+       margin: 20px;
+}
+.footer-menual-item ul li a{
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: bold;
+      color: gray;
+}
+.footer-menual-item p{
+      text-align: center;
+      padding-bottom: 20px;
+}
+.footer-menual-item span{
+    color: brown;
+}
+hr{
+    margin: 40px;
+}
